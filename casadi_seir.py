@@ -2,7 +2,7 @@ import casadi as ca
 import pandas as pd
 
 # --- Đọc dữ liệu từ tệp Excel ---
-file_path = 'C:\\Users\\Administrator\\Downloads\\data-1.xlsx'
+file_path = 'data-1.xlsx'
 sheet_name = 'covid19_provinces_vn'
 df = pd.read_excel(file_path, sheet_name=sheet_name)
 
@@ -117,7 +117,7 @@ for c in cities:
     daily_vaccine_results.append(daily_row)
 
 # Xuất kết quả ra file Excel
-output_file = 'C:\\Users\\Administrator\\Downloads\\SEIR_results.xlsx'
+output_file = 'SEIR_results.xlsx'
 
 with pd.ExcelWriter(output_file, engine='xlsxwriter') as writer:
     summary_df = pd.DataFrame(summary_results)
