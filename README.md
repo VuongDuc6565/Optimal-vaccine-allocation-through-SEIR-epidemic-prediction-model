@@ -95,7 +95,6 @@ python casadi_seir.py
 | File | Content |
 |------|---------|
 | `SEIR_results.xlsx` | **Summary** sheet: infections & total vaccine per province<br>**Daily_Vaccine** sheet: doses delivered each day |
-| `schedule.log` | IPOPT solver iterations, objective value, convergence info |
 
 ---
 
